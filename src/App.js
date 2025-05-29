@@ -53,6 +53,28 @@ function App() {
     return () => clearInterval(interval);
   }, []);
 
+  useEffect(() => {
+  // Add scroll-triggered animations and parallax effects
+  const handleScroll = () => {
+    const scrolled = window.pageYOffset;
+    const rate = scrolled * -0.3;
+    
+    // Parallax effect for hero backgrounds
+    const heroElement = document.querySelector('.hero');
+    if (heroElement) {
+      heroElement.style.transform = `translateY(${rate}px)`;
+    }
+  };
+
+  // Add scroll listener
+  window.addEventListener('scroll', handleScroll);
+
+  // Cleanup
+  return () => {
+    window.removeEventListener('scroll', handleScroll);
+  };
+}, []);
+
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -64,10 +86,10 @@ function App() {
     <div className="App">
       {/* Navigation */}
       <nav className="navbar">
-        <div className="logo">
-          <span className="diamond">◆</span>
-          Richie Ippoliti
-        </div>
+<div className="logo">
+<span className="diamond">◆</span>
+  <span className="logo-text">Richie Ippoliti</span>
+</div>
         <div className="nav-links">
           <a href="#about" onClick={(e) => { e.preventDefault(); scrollToSection('about'); }}>About</a>
           <a href="#projects" onClick={(e) => { e.preventDefault(); scrollToSection('projects'); }}>Projects</a>
@@ -132,8 +154,7 @@ function App() {
             </div>
           </div>
 <div className="right-section">
-  <div className="photo-wrapper">
-    <div className="glow-circle"></div>
+  <div className="headshot-container">
     <img 
       src="/headshot.jpg"
       alt="Richie Ippoliti Headshot"
