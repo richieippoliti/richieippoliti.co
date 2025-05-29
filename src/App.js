@@ -169,7 +169,7 @@ function App() {
       <div className="about-me-grid">
         <div className="about-photo">
       <img
-        src="/costarica.jpg" // or use imported image if you prefer
+        src="/costarica.JPG" // or use imported image if you prefer
         alt="Adventure in Costa Rica"
         className="about-image"
       />
@@ -258,7 +258,7 @@ Developed a Global Cyber Threat Intelligence Map using Azure Sentinel and a hone
   </div>
     <div className="experience-intro">
     <p><strong>Software Engineering Intern</strong> at <strong>Revent Solutions</strong>, Developing <a href="https://reventsolutions.com/walletwize" target="_blank" rel="noopener noreferrer"><strong>WalletWize</strong></a> (Jan. 2025 - March 2025).</p>
-    <img src="/wizeicon.png" alt="WalletWize Logo" className="inline-logo" />
+    <img src="/wizeicon.PNG" alt="WalletWize Logo" className="inline-logo" />
   </div>
     <div className="experience-intro">
     <p><strong>Top 1% of Users Worldwide</strong> on <strong>TryHackMe</strong> </p>
