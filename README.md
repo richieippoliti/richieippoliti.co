@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# richieippoliti.com
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was completed to create a visually appealing portfolio for my academic experiences and studies.
 
 ## Available Scripts
 
