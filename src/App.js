@@ -177,7 +177,7 @@ function App() {
     <div className="about-bio">
     <h2 className="about-bio-title">About Me</h2>
       <p className="about-text">
-        I’m from <strong>Long Island, New York.</strong> Outside of studying computer science and AI, I like spend to time on the water with friends and family.
+        I’m from <strong>Long Island, New York.</strong> Outside of studying computer science and AI, I like to spend time on the water with friends and family.
       </p>
       <p className="about-text">
         I am passionate about new experiences. My love for exploration reflects the same <strong>curiosity</strong>, <strong>drive</strong>, and <strong>adaptability</strong> I apply to solving real-world problems in the field of technology. Before I entered the industry, I was an <strong>Ocean Lifeguard</strong> for four summers at the beaches of the Town of Hempstead.
