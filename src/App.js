@@ -155,11 +155,22 @@ function App() {
           </div>
 <div className="right-section">
   <div className="headshot-container">
-    <img 
-      src="/headshot.jpg"
-      alt="Richie Ippoliti Headshot"
-      className="headshot"
-    />
+    <div className="headshot-flip-card">
+      <div className="headshot-flip-front">
+        <img 
+          src="/headshot.jpg"
+          alt="Richie Ippoliti Professional Headshot"
+          className="headshot"
+        />
+      </div>
+      <div className="headshot-flip-back">
+        <img 
+          src="/casual-headshot.jpg"
+          alt="Richie Ippoliti Casual Headshot"
+          className="headshot"
+        />
+      </div>
+    </div>
   </div>
 </div>
         </div>
@@ -177,7 +188,7 @@ function App() {
     <div className="about-bio">
     <h2 className="about-bio-title">About Me</h2>
       <p className="about-text">
-        I’m from <strong>Long Island, New York.</strong> Outside of studying computer science and AI, I like to spend time on the water with friends and family.
+        I'm from <strong>Long Island, New York.</strong> Outside of studying computer science and AI, I like to spend time on the water with friends and family.
       </p>
       <p className="about-text">
         I am passionate about new experiences. My love for exploration reflects the same <strong>curiosity</strong>, <strong>drive</strong>, and <strong>adaptability</strong> I apply to solving real-world problems in the field of technology. Before I entered the industry, I was an <strong>Ocean Lifeguard</strong> for four summers at the beaches of the Town of Hempstead.
