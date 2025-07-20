@@ -91,15 +91,15 @@ function App() {
   <span className="logo-text">Richie Ippoliti</span>
 </div>
         <div className="nav-links">
+          <a href="#home" onClick={(e) => { e.preventDefault(); scrollToSection('home'); }}>Home</a>
           <a href="#about" onClick={(e) => { e.preventDefault(); scrollToSection('about'); }}>About</a>
           <a href="#projects" onClick={(e) => { e.preventDefault(); scrollToSection('projects'); }}>Projects</a>
-          <a href="#experience" onClick={(e) => { e.preventDefault(); scrollToSection('experience'); }}>Experience</a>
           <a href="#contact" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}>Contact</a>
         </div>
       </nav>
 
       {/* Hero Section */}
-      <section className="hero" id="about">
+      <section className="hero" id="home">
         <div className="hero-content">
           <div className="left-section">
             <div>
@@ -176,25 +176,85 @@ function App() {
         </div>
       </section>
 
-      <section className="section about-me-section">
-      <div className="about-me-grid">
-        <div className="about-photo">
+      <section className="section about-me-section" id="about">
+  <div className="about-me-grid">
+    <div className="about-photo">
       <img
-        src="/costarica.JPG" // or use imported image if you prefer
+        src="/costarica.JPG"
         alt="Adventure in Costa Rica"
         className="about-image"
       />
     </div>
-    <div className="about-bio">
-    <h2 className="about-bio-title">About Me</h2>
-      <p className="about-text">
-        I'm from <strong>Long Island, New York.</strong> Outside of studying computer science and AI, I like to spend time on the water with friends and family.
-      </p>
-      <p className="about-text">
-        I am passionate about new experiences. My love for exploration reflects the same <strong>curiosity</strong>, <strong>drive</strong>, and <strong>adaptability</strong> I apply to solving real-world problems in the field of technology. Before I entered the industry, I was an <strong>Ocean Lifeguard</strong> for four summers at the beaches of the Town of Hempstead.
-      </p>
+    <div>
+      <h2 className="about-bio-title">About Me</h2>
+      <div className="about-bio">
+        <p className="about-text">
+          I'm from <strong>Long Island, New York.</strong> Outside of studying computer science and AI, I like to spend time on the water with friends and family.
+        </p>
+        <p className="about-text">
+          I am passionate about new experiences. My love for exploration reflects the same <strong>curiosity</strong>, <strong>drive</strong>, and <strong>adaptability</strong> I apply to solving real-world problems in the field of technology. Before I entered the industry, I was an <strong>Ocean Lifeguard</strong> for four summers at the beaches of the Town of Hempstead.
+        </p>
+      </div>
+      <div className="currently-section-inline">
+        <h3 className="currently-title-inline">Currently:</h3>
+        <div className="currently-card-inline">
+          <div className="currently-content-inline">
+            <div className="currently-text-inline">
+              <strong>Software Engineering Intern</strong> <span className="currently-separator">|</span>
+              <a
+                href="https://www.jahnelgroup.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="currently-company-blue"
+              >
+                Jahnel Group
+              </a>
+              <span className="currently-location" style={{ marginLeft: '10px', color: '#aaa', fontSize: '0.95em', fontStyle: 'italic' }}>Albany, NY</span>
+            </div>
+            <div className="currently-date-inline">As of June 2025</div>
+          </div>
+          <img src="/jahnel.png" alt="Jahnel Group Logo" className="currently-logo-inline" />
+        </div>
+      </div>
     </div>
+  </div>
+  <div className="technical-skills">
+    <h3 className="skills-title">Technical Skills</h3>
+    <div className="skills-grid">
+      <div className="skill-item">
+        <img src="/python.svg" alt="Python" className="skill-icon-img" />
+        <span className="skill-name">Python</span>
+      </div>
+      <div className="skill-item">
+        <img src="/javascript.svg" alt="JavaScript" className="skill-icon-img" />
+        <span className="skill-name">JavaScript</span>
+      </div>
+      <div className="skill-item">
+        <img src="/java.svg" alt="Java" className="skill-icon-img" />
+        <span className="skill-name">Java</span>
+      </div>
+      <div className="skill-item">
+        <img src="/mysql.svg" alt="MySQL" className="skill-icon-img" />
+        <span className="skill-name">MySQL</span>
+      </div>
+      <div className="skill-item">
+        <img src="/ocaml.svg" alt="OCaml" className="skill-icon-img" />
+        <span className="skill-name">OCaml</span>
+      </div>
+      <div className="skill-item">
+        <img src="/react.svg" alt="React" className="skill-icon-img" />
+        <span className="skill-name">React</span>
+      </div>
+      <div className="skill-item">
+        <img src="/aws.svg" alt="AWS" className="skill-icon-img" />
+        <span className="skill-name">AWS</span>
+      </div>
+      <div className="skill-item">
+        <img src="/htmlcss.svg" alt="HTML/CSS" className="skill-icon-img" />
+        <span className="skill-name">HTML/CSS</span>
+      </div>
     </div>
+  </div>
 </section>
 
 {/* Projects Section */}
@@ -202,125 +262,164 @@ function App() {
   <h2 className="section-title">Recent Projects</h2>
   <div className="projects-grid">
 
-    {/* Project 1 */}
+    {/* Project 0 */}
     <div className="project-card">
-      <h3 className="project-title">"Save the World" Simulation Game in OCaml</h3>
-      <img src="/savetheworld.png" alt="Cyber Map Screenshot" className="project-image" />
-      <video className="project-video"     
-      controls>
-        <source src="/plaguedemo.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      <h3 className="project-title">IntervalScribe AI</h3>
       <p className="project-description">
-        Real-time strategy simulation game inspired by Plague Inc., where players assume the role of global health institutions working to control a deadly outbreak across the seven continents.
+      IntervalScribe AI is a productivity tool that automatically captures, OCRs, and summarizes your on-screen work at regular intervals. It helps you keep a detailed, time-stamped log of your daily activities, making it easy to review, summarize, and document your work sessions.
       </p>
       <div className="project-links">
-        <a href="https://github.coecis.cornell.edu/cl2632/cs3110final" target="_blank" rel="noopener noreferrer">Code is only accessible through Cornell Email, Reach out to me for Live Demo</a>
+        <a href="https://github.com/richieippoliti/IntervalScribeAI" target="_blank" rel="noopener noreferrer">
+          <i className="fab fa-github"></i> GitHub
+        </a>
+      </div>
+      <div className="project-tags">
+        <span className="tag">Python</span>
+        <span className="tag">Tesseract OCR</span>
+        <span className="tag">Gemini API</span>
       </div>
     </div>
 
-        {/* Project 3 */}
+    {/* Project 1 */}
     <div className="project-card">
-      <h3 className="project-title">WalletWize</h3>
-      <img src="/walletwize.jpeg" alt="WalletWize" className="project-image" />
+      <h3 className="project-title">"Save the World" Plague Simulator</h3>
       <p className="project-description">
-Through my Internship as a Full-Stack Developer at Revent Solutions, I contributed to the development of a smart budgeting app and AI Finance Tracker that makes managing your money effortless.
+      Real-time strategy simulation game inspired by Plague Inc., where players assume the role of global health institutions working to control a deadly outbreak across the seven continents. Players must coordinate research efforts and manage limited resources while racing against time to prevent global catastrophe.
       </p>
       <div className="project-links">
-        <a href="https://reventsolutions.com/walletwize" target="_blank" rel="noopener noreferrer">Read More</a>
+        <a href="https://github.coecis.cornell.edu/cl2632/cs3110final" target="_blank" rel="noopener noreferrer">
+          <i className="fab fa-github"></i> GitHub
+        </a>
       </div>
-      <div className="project-links">
-        <a href="https://apps.apple.com/us/app/ai-finance-tracker-walletwize/id6480011249" target="_blank" rel="noopener noreferrer"> Download</a>
+      <div className="project-tags">
+        <span className="tag">Academia</span>
+        <span className="tag">OCaml</span>
       </div>
     </div>
 
     {/* Project 2 */}
     <div className="project-card">
-      <h3 className="project-title">Global Cyber Intrusion Detection System</h3>
-      <img src="/geoscript.png" alt="Cyber Map Screenshot" className="project-image" />
-      <img src="/global2.png" alt="Cyber Map Screenshot" className="project-image" />
+      <h3 className="project-title">WalletWize</h3>
       <p className="project-description">
-Developed a Global Cyber Threat Intelligence Map using Azure Sentinel and a honeypot VM to visualize real-time intrusion attempts. Extracted and geolocated attacker IPs with PowerShell and custom log queries to highlight global brute-force patterns.
+      Smart budgeting app and AI Finance Tracker that makes managing your money effortless. Developed as a Software Engineer, featuring automated expense categorization, personalized spending insights, and intelligent budget recommendations to help users achieve their financial goals.
       </p>
       <div className="project-links">
-        <a href="https://www.linkedin.com/in/richard-ippoliti/details/projects/?profileUrn=urn%3Ali%3Afsd_profile%3AACoAAEZvB_cBmH3awA_ZEBhIkIlsbfymRvAwuxE" target="_blank" rel="noopener noreferrer">Read More</a>
+        <a href="https://apps.apple.com/us/app/walletwize-budget-expense/id6480011249" target="_blank" rel="noopener noreferrer">
+          <i className="fas fa-mobile-alt"></i> Download on App Store
+        </a>
+      </div>
+      <div className="project-tags">
+        <span className="tag">React Native</span>
+        <span className="tag">Node.js/Express</span>
+        <span className="tag">MongoDB</span>
       </div>
     </div>
 
+    {/* Project 3 */}
+    <div className="project-card">
+      <h3 className="project-title">Global Cyber Intrusion Detection System</h3>
+      <p className="project-description">
+      Cloud-based SIEM implementation using Azure Sentinel integrated with a deliberately exposed honeypot virtual machine to monitor and geolocate global RDP brute-force attack vectors. Deployed custom PowerShell scripts for automated log ingestion, IP geolocation mapping via third-party APIs, and real-time threat visualization dashboards to analyze global attack patterns.
+      </p>
+      <div className="project-links">
+        <a href="https://www.linkedin.com/in/richard-ippoliti/details/projects/?profileUrn=urn%3Ali%3Afsd_profile%3AACoAAEZvB_cBmH3awA_ZEBhIkIlsbfymRvAwuxE" target="_blank" rel="noopener noreferrer">
+          <i className="fas fa-external-link-alt"></i> Read More
+        </a>
+      </div>
+      <div className="project-tags">
+        <span className="tag">Azure Sentinel</span>
+        <span className="tag">PowerShell</span>
+        <span className="tag">VMWare</span>
+      </div>
+    </div>
+
+    {/* Project 4 */}
+    <div className="project-card">
+      <h3 className="project-title">richieippoliti.co</h3>
+      <p className="project-description">
+      My personal portfolio website, built with React and modern CSS, showcasing my projects and experience. Designed for a dynamic and responsive user experience with smooth animations and intuitive navigation across all devices.
+      </p>
+      <div className="project-links">
+        <a href="https://github.com/richieippoliti/richieippoliti.com" target="_blank" rel="noopener noreferrer">
+          <i className="fab fa-github"></i> GitHub
+        </a>
+      </div>
+      <div className="project-tags">
+        <span className="tag">React</span>
+        <span className="tag">HTML</span>
+        <span className="tag">CSS</span>
+      </div>
+    </div>
+
+    {/* Project: CUClassConnect */}
+    <div className="project-card">
+      <h3 className="project-title">CUClassConnect</h3>
+      <p className="project-description">
+      Connect, collaborate, and learn together with CUClassConnect – your interactive hub for educational engagement and peer discussions. Submitted to the Cornell AppDev 2023 Hack Challenge.
+      </p>
+      <div className="project-links">
+        <a href="https://github.com/richieippoliti/Cornell-AppDev-Hack-Challenge" target="_blank" rel="noopener noreferrer">
+          <i className="fab fa-github"></i> GitHub
+        </a>
+      </div>
+      <div className="project-tags">
+        <span className="tag">Swift</span>
+        <span className="tag">Academia</span>
+        <span className="tag">Frontend</span>
+      </div>
+    </div>
 
   </div>
 </section>
 
 
-      <section className="section" id="experience">
-  <h2 className="section-title">Experience</h2>
-
-  <div className="experience-intro">
-<p><strong>Software Engineering Intern</strong> at <a href="https://www.jahnelgroup.com" target="_blank" rel="noopener noreferrer"><strong>Jahnel Group</strong></a> (Summer 2025).</p>
-    <img src="/jahnel.png" alt="Jahnel Group Logo" className="inline-logo" />
-  </div>
-  <div className="experience-intro">
-  <p><strong>NME Teaching Assistant</strong> and <strong>Officer</strong> at <a href="https://www.cornellcyber.club" target="_blank" rel="noopener noreferrer"><strong>Cornell Cybersecurity Club</strong></a> (Sept. 2024 - Present).</p>
-    <img src="/cornellcyber.png" alt="Cornell Cyber Logo" className="inline-logo" />
-  </div>
-  <div className="experience-intro">
-    <p><strong>MC Class President</strong> and <strong>Executive Board Member</strong> at <a href="https://ktpcornell.com" target="_blank" rel="noopener noreferrer"><strong>Kappa Theta Pi, Cornell University Alpha Class</strong></a> (Jan. 2025 - Present).</p>
-    <img src="/ktplogo.png" alt="Kappa Theta Pi Logo" className="inline-logo" />
-  </div>
-    <div className="experience-intro">
-    <p><strong>Software Engineering Intern</strong> at <strong>Revent Solutions</strong>, Developing <a href="https://reventsolutions.com/walletwize" target="_blank" rel="noopener noreferrer"><strong>WalletWize</strong></a> (Jan. 2025 - March 2025).</p>
-    <img src="/wizeicon.PNG" alt="WalletWize Logo" className="inline-logo" />
-  </div>
-    <div className="experience-intro">
-    <p><strong>Top 1% of Users Worldwide</strong> on <strong>TryHackMe</strong> </p>
-    <img src="/tryhackme.png" alt="TryHackMe Logo" className="inline-logo" />
-  </div>
-
-</section>
-
-
-
-
-<section className="section" id="contact">
-  <h2 className="section-title">Let's Connect</h2>
-  <div className="contact-content">
-    <p className="about-text">
-      Interested in discussing new opportunities, potential collaborations, or have any questions? Reach out!</p>
-
-    <div className="contact-form">
-      <form onSubmit={handleSubmit}>
-        <div className="form-group">
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
+<section className="section contact-section-wide" id="contact">
+  <div className="connect-outer-grid">
+    <div className="contact-photo">
+      <img src="/connect-photo.jpg" alt="Let's Connect" className="contact-image" />
+    </div>
+    <div className="connect-card">
+      <h2 className="section-title">Let's Connect</h2>
+      <div className="contact-content">
+        <p className="about-text">
+          Interested in discussing new opportunities, potential collaborations, or have any questions? Reach out!
+        </p>
+        <div className="contact-form small-clean-form">
+          <form onSubmit={handleSubmit}>
+            <div className="form-group">
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div className="form-group">
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div className="form-group">
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                rows="4"
+                value={formData.message}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <button type="submit" className="send-btn">Send Message</button>
+          </form>
         </div>
-        <div className="form-group">
-          <input
-            type="email"
-            name="email"
-            placeholder="Your Email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        <div className="form-group">
-          <textarea
-            name="message"
-            placeholder="Your Message"
-            rows="5"
-            value={formData.message}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        <button type="submit" className="send-btn">Send Message</button>
-      </form>
+      </div>
     </div>
   </div>
 </section>
