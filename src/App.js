@@ -192,7 +192,7 @@ function App() {
           I'm from <strong>Long Island, New York.</strong> Outside of studying computer science and AI, I like to spend time on the water with friends and family.
         </p>
         <p className="about-text">
-          I am passionate about new experiences. My love for exploration reflects the same <strong>curiosity</strong>, <strong>drive</strong>, and <strong>adaptability</strong> I apply to solving real-world problems in the field of technology. Before I entered the industry, I was an <strong>Ocean Lifeguard</strong> for four summers at the beaches of the Town of Hempstead.
+          I am passionate about new experiences. I am <strong>curious</strong>, <strong>driven</strong>, and <strong>adaptable</strong>, with a drive to solve real-world problems in the field of technology. Before I entered the industry, I was an <strong>Ocean Lifeguard</strong> for four summers at the beaches of the Town of Hempstead.
         </p>
       </div>
       <div className="currently-section-inline">
