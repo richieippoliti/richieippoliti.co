@@ -138,7 +138,7 @@ function App() {
             <div className="about-description">
               <div className="cornell-line">
               <img src="/cornell-logo.png" alt="Cornell Logo" className="cornell-logo-img" />
-                <span>Rising Junior at</span>
+                <span>Junior at</span>
                 <span className="cornell-name">Cornell University, College of Engineering</span>
                 <span></span>
               </div>
