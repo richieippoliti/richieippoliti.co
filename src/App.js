@@ -143,7 +143,7 @@ function App() {
                 <span></span>
               </div>
               <p className="about-text">
-                At Cornell, I am pursuing a degree in <strong>Computer Science</strong> with a minor in <strong>Artificial Intelligence</strong> 
+                At Cornell, I am studying a degree in <strong>Computer Science</strong> with a minor in <strong>Artificial Intelligence</strong> 
                 . I'm passionate about building innovative solutions and exploring the intersection of 
                 technology and human experience.
               </p>
@@ -189,7 +189,7 @@ function App() {
       <h2 className="about-bio-title">About Me</h2>
       <div className="about-bio">
         <p className="about-text">
-          I'm from <strong>Long Island, New York.</strong> Outside of studying computer science and AI, I like to spend time on the water with friends and family.
+          I'm from <strong>Long Island, New York.</strong>.
         </p>
         <p className="about-text">
           I am passionate about new experiences. I am <strong>curious</strong>, <strong>driven</strong>, and <strong>adaptable</strong>, with a drive to solve real-world problems in the field of technology. Before I entered the industry, I was an <strong>Ocean Lifeguard</strong> for four summers at the beaches of the Town of Hempstead.
