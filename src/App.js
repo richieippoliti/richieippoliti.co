@@ -192,7 +192,7 @@ function App() {
           I'm from <strong>Long Island, New York.</strong>
         </p>
         <p className="about-text">
-          Before I entered the industry, I was an <strong>Ocean Lifeguard</strong> for four summers at the beaches of the Town of Hempstead.
+          Before I entered the industry, I was an <strong>Ocean Lifeguard</strong> for 4 summers at the beaches of the Town of Hempstead.
         </p>
       </div>
       <div className="currently-section-inline">
