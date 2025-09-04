@@ -189,10 +189,10 @@ function App() {
       <h2 className="about-bio-title">About Me</h2>
       <div className="about-bio">
         <p className="about-text">
-          I'm from <strong>Long Island, New York.</strong>.
+          I'm from <strong>Long Island, New York.</strong>
         </p>
         <p className="about-text">
-          I am passionate about new experiences. I am <strong>curious</strong>, <strong>driven</strong>, and <strong>adaptable</strong>, with a drive to solve real-world problems in the field of technology. Before I entered the industry, I was an <strong>Ocean Lifeguard</strong> for four summers at the beaches of the Town of Hempstead.
+          I am <strong>curious</strong>, <strong>driven</strong>, and <strong>adaptable</strong>, with a drive to solve real-world problems in the field of technology. Before I entered the industry, I was an <strong>Ocean Lifeguard</strong> for four summers at the beaches of the Town of Hempstead.
         </p>
       </div>
       <div className="currently-section-inline">
