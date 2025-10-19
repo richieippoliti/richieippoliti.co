@@ -93,6 +93,7 @@ function App() {
         <div className="nav-links">
           <a href="#home" onClick={(e) => { e.preventDefault(); scrollToSection('home'); }}>Home</a>
           <a href="#about" onClick={(e) => { e.preventDefault(); scrollToSection('about'); }}>About</a>
+          <a href="#skills" onClick={(e) => { e.preventDefault(); scrollToSection('skills'); }}>Skills</a>
           <a href="#projects" onClick={(e) => { e.preventDefault(); scrollToSection('projects'); }}>Projects</a>
           <a href="#contact" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}>Contact</a>
         </div>
@@ -196,11 +197,11 @@ function App() {
         </p>
       </div>
       <div className="currently-section-inline">
-        <h3 className="currently-title-inline">Currently:</h3>
+        <h3 className="currently-title-inline">Previously:</h3>
         <div className="currently-card-inline">
           <div className="currently-content-inline">
             <div className="currently-text-inline">
-              <strong>Software Engineering Intern</strong> <span className="currently-separator">|</span>
+              <strong>Software Engineer Intern</strong> <span className="currently-separator">|</span>
               <a
                 href="https://www.jahnelgroup.com"
                 target="_blank"
@@ -211,13 +212,39 @@ function App() {
               </a>
               <span className="currently-location" style={{ marginLeft: '10px', color: '#aaa', fontSize: '0.95em', fontStyle: 'italic' }}>Albany, NY</span>
             </div>
-            <div className="currently-date-inline">As of June 2025</div>
+            <div className="currently-date-inline">Summer 2025</div>
           </div>
           <img src="/jahnel.png" alt="Jahnel Group Logo" className="currently-logo-inline" />
         </div>
       </div>
+      <div className="currently-section-inline">
+        <h3 className="currently-title-inline">Incoming:</h3>
+        <div className="currently-card-inline">
+          <div className="currently-content-inline">
+            <div className="currently-text-inline">
+              <strong>Software Engineer Intern</strong> <span className="currently-separator">|</span>
+              <a
+                href="https://www.datadoghq.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="currently-company-blue"
+              >
+                Datadog
+              </a>
+              <span className="currently-location" style={{ marginLeft: '10px', color: '#aaa', fontSize: '0.95em', fontStyle: 'italic' }}>New York, NY</span>
+            </div>
+            <div className="currently-date-inline">Summer 2026</div>
+          </div>
+          <img src="/datadog.png" alt="Datadog Logo" className="currently-logo-inline" />
+        </div>
+      </div>
     </div>
   </div>
+</section>
+
+{/* Skills Section */}
+<section className="section skills" id="skills">
+  <h2 className="section-title">Skills</h2>
   <div className="technical-skills">
     <h3 className="skills-title">Technical Skills</h3>
     <div className="skills-grid">
@@ -252,6 +279,29 @@ function App() {
       <div className="skill-item">
         <img src="/htmlcss.svg" alt="HTML/CSS" className="skill-icon-img" />
         <span className="skill-name">HTML/CSS</span>
+      </div>
+    </div>
+  </div>
+  <div className="certifications-section">
+    <h3 className="skills-title">Certifications</h3>
+    <div className="currently-section-inline">
+      <div className="currently-card-inline">
+        <div className="currently-content-inline">
+          <div className="currently-text-inline">
+            <strong>CompTIA Security+ (SY0-701)</strong>
+          </div>
+          <div className="currently-date-inline">
+            <a 
+              href="https://www.credly.com/badges/6eb690dd-d14b-4f5d-8b05-7d7ee2ae7231/public_url" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="certification-link"
+            >
+              View Certification Here
+            </a>
+          </div>
+        </div>
+        <img src="/comptia.png" alt="CompTIA Logo" className="currently-logo-inline" />
       </div>
     </div>
   </div>
@@ -433,3 +483,4 @@ function App() {
 
 
 export default App;
+
