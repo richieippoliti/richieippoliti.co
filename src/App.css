@@ -782,9 +782,15 @@ section {
   border-radius: 8px;
 }
 
+/* Skills Section */
+.skills {
+  background: #1a1a1a;
+}
+
 /* Technical Skills Section */
 .technical-skills {
-  margin-top: -16px;
+  margin-top: 0;
+  margin-bottom: 40px;
 }
 
 .skills-title {
@@ -1150,11 +1156,12 @@ section {
 }
 
 .currently-logo-inline {
-  width: 40px;
-  height: 40px;
+  width: 80px;
+  height: 80px;
   object-fit: contain;
   border-radius: 8px;
   margin-left: 18px;
+  padding: 5px;
 }
 
 .currently-company-blue {
@@ -1166,6 +1173,18 @@ section {
   color: #888;
   margin: 0 8px;
   font-weight: 400;
+}
+
+.certification-link {
+  color: #4da6ff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.certification-link:hover {
+  color: #007acc;
+  text-decoration: underline;
 }
 
   .contact-grid {
