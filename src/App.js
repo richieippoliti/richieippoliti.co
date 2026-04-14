@@ -51,7 +51,7 @@ function App() {
     }, 3000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [roles.length]);
 
   useEffect(() => {
   // Add scroll-triggered animations and parallax effects
